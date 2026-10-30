@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 5.5 380 380" width="100%" height="100%" fill="none">
+  <title>Mazvon Standalone Ribbon Brand Mark</title>
+  <desc>Immutable Production Master Vector Specification — Holistic 4-Layer Tangential Lock, Pure 30° Negative Gate Apex, Diffuse Ambient Occlusion, Uniform 58.6px Caliper</desc>
+
+  <!-- ======================================================================= -->
+  <!-- VOLUMETRIC LIGHTING, HIGH-LUMINANCE CHROMATIC GRADIENTS & OCCLUSION     -->
+  <!-- ======================================================================= -->
+  <defs>
+    <!-- 1. Left Pillar Continuous 3D Cylindrical Gradient (High-Luminance Aqua -> Sovereign Teal -> Deep Cerulean) -->
+    <linearGradient id="grad-left-pillar" x1="40" y1="318" x2="146" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#26E8CE" />
+      <stop offset="28%" stop-color="#19BEB8" />
+      <stop offset="58%" stop-color="#128EA8" />
+      <stop offset="84%" stop-color="#0D6490" />
+      <stop offset="100%" stop-color="#094474" />
+    </linearGradient>
+
+    <!-- 1B. Left Pillar Diffuse Ambient Occlusion Beneath Central Bridge Overhang (Calibrated Anti-Bruise Ramp) -->
+    <linearGradient id="grad-left-underbridge-shadow" x1="114" y1="202" x2="74" y2="264" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#073662" stop-opacity="0.36" />
+      <stop offset="45%" stop-color="#0A4E7C" stop-opacity="0.16" />
+      <stop offset="82%" stop-color="#0F7298" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#128EA8" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- 2. Right Pillar Base Gradient: Airy Sapphire Inner Wall -> Luminous Aqua Outer Wall -->
+    <linearGradient id="grad-right-pillar" x1="290" y1="180" x2="360" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#094074" />
+      <stop offset="25%" stop-color="#0D6292" />
+      <stop offset="55%" stop-color="#1392AC" />
+      <stop offset="82%" stop-color="#1AC8BC" />
+      <stop offset="100%" stop-color="#28F0CE" />
+    </linearGradient>
+
+    <!-- 2B. Right Pillar Soft Ambient Under-Blade Cast Shadow -->
+    <linearGradient id="grad-right-underblade-shadow" x1="312" y1="138" x2="340" y2="188" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#062B56" stop-opacity="0.42" />
+      <stop offset="48%" stop-color="#094578" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#1392AC" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- 2C. Right Pillar Lower Fold Cup Shading (Harmonized with Luminous Azure Turn) -->
+    <linearGradient id="grad-right-fold-cup" x1="348" y1="190" x2="330" y2="248" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#28F0CE" stop-opacity="0.0" />
+      <stop offset="52%" stop-color="#0E82C6" stop-opacity="0.20" />
+      <stop offset="100%" stop-color="#0A5CD2" stop-opacity="0.48" />
+    </linearGradient>
+
+    <!-- 3. Upper-Right Blade Gradient: Deep Cerulean Tuck -> Sovereign Teal Core -> Luminous Aqua-Mint Apex -->
+    <linearGradient id="grad-upper-blade" x1="196" y1="166" x2="350" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#094478" />
+      <stop offset="20%" stop-color="#0E6A94" />
+      <stop offset="45%" stop-color="#149EB0" />
+      <stop offset="72%" stop-color="#1ED2BE" />
+      <stop offset="100%" stop-color="#2CF2D2" />
+    </linearGradient>
+
+    <!-- 3B. Upper-Right Blade Ethereal Under-Bridge Contact Occlusion -->
+    <linearGradient id="grad-upper-blade-roll" x1="204" y1="172" x2="256" y2="138" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#062C5C" stop-opacity="0.44" />
+      <stop offset="46%" stop-color="#0A4C7E" stop-opacity="0.18" />
+      <stop offset="82%" stop-color="#0F7B9B" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#15B0B2" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- 4. Central Foreground Bridge Gradient: Luminous Aqua-Mint Crown -> Sovereign Cyan -> Electric Azure -->
+    <linearGradient id="grad-central-bridge" x1="48" y1="134" x2="346" y2="268" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#28F0CE" />
+      <stop offset="18%" stop-color="#1CD6CE" />
+      <stop offset="40%" stop-color="#10ACEE" />
+      <stop offset="64%" stop-color="#0A86F8" />
+      <stop offset="85%" stop-color="#0B70F0" />
+      <stop offset="100%" stop-color="#0C5CE8" />
+    </linearGradient>
+
+    <!-- 4B. Left Saddle Fold Silk Roll Transition (Zero Crease Banding) -->
+    <linearGradient id="grad-saddle-turn" x1="40" y1="190" x2="78" y2="156" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B7690" stop-opacity="0.22" />
+      <stop offset="50%" stop-color="#16B8B8" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#28F0CE" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+
+  <!-- ======================================================================= -->
+  <!-- MASTER RIBBON GEOMETRY (HOLISTIC 4-LAYER COUPLED VECTOR SYSTEM)         -->
+  <!-- ======================================================================= -->
+  <g id="mazvon-ribbon-mark">
+
+    <!-- LAYER 1: Back-Left Vertical Pillar and Sweeping Isometric Base Return -->
+    <g id="layer-1-left-pillar">
+      <path id="ribbon-left-pillar" fill="url(#grad-left-pillar)" d="M 40,194
+           V 315
+           C 40,337.5 57,346 76,334.5
+           L 126.5,303.5
+           C 139,295.8 146,282.5 146,267.5
+           V 194
+           L 68,166
+           C 48,166 40,178 40,194
+           Z" />
+      <!-- Diffuse Ambient Occlusion Beneath Central Bridge Overhang -->
+      <path id="shadow-left-underbridge" fill="url(#grad-left-underbridge-shadow)" d="M 40,194
+           V 272
+           L 146,258
+           V 194
+           L 68,166
+           C 48,166 40,178 40,194
+           Z" />
+    </g>
+
+    <!-- LAYER 2: Back-Right Vertical Loop and Balanced Outer Right Wrap -->
+    <g id="layer-2-right-pillar">
+      <path id="ribbon-right-pillar" fill="url(#grad-right-pillar)" d="M 290,140
+           V 238.5
+           L 341,255
+           C 352.5,248 360,236 360,220
+           V 92
+           L 290,140
+           Z" />
+      <!-- Cylindrical Cup Shading Inside the Lower-Right Wrap Turn -->
+      <path id="shading-right-fold-cup" fill="url(#grad-right-fold-cup)" d="M 290,184
+           V 238.5
+           L 341,255
+           C 352.5,248 360,236 360,220
+           V 184
+           H 290
+           Z" />
+      <!-- Soft Cast Shadow Beneath Upper-Right Blade Overhang -->
+      <path id="shadow-right-underblade" fill="url(#grad-right-underblade-shadow)" d="M 290,140
+           V 196
+           L 360,126
+           V 92
+           L 290,140
+           Z" />
+    </g>
+
+    <!-- LAYER 3: Mid-Ground Ascending Right-Hand Blade (Parabolic Sweep + Tangential -30° Glide Under Layer 4) -->
+    <g id="layer-3-upper-right-blade">
+      <path id="ribbon-upper-right-blade" fill="url(#grad-upper-blade)" d="M 186,162
+           C 228,124 279,84.5 325.5,56
+           C 344.5,45 360,53.5 360,74.5
+           V 98
+           C 360,115 350.5,132 335,142
+           L 244,194.5
+           C 226,204.9 208,184 186,162
+           Z" />
+      <!-- Ethereal Under-Bridge Contact Occlusion -->
+      <path id="shading-upper-blade-roll" fill="url(#grad-upper-blade-roll)" d="M 186,162
+           C 228,124 279,84.5 325.5,56
+           C 344.5,45 360,53.5 360,74.5
+           V 98
+           C 360,115 350.5,132 335,142
+           L 244,194.5
+           C 226,204.9 208,184 186,162
+           Z" />
+    </g>
+
+    <!-- LAYER 4: Foreground Central Diagonal Traverse (100% Parallel 58.6px Caliper, Zero Neck Pinch) -->
+    <g id="layer-4-central-bridge">
+      <path id="ribbon-central-bridge" fill="url(#grad-central-bridge)" d="M 40,194
+           C 40,176.5 48.5,162.5 62,154.5
+           L 106,129
+           C 119.5,121.2 134.5,124.5 147.5,132
+           L 326,235
+           C 344,245.4 360,235.5 360,220
+           C 360,236 352.5,248 341,255
+           L 280,286.5
+           C 264,295 247,291.8 231,282.5
+           C 178,252 124.5,221 71.5,190.5
+           C 53.5,180 40,182 40,194
+           Z" />
+      <!-- Silk Roll Shading Across Upper-Left Saddle Arch (Strictly Bounded to Bridge Contour) -->
+      <path id="shading-left-saddle" fill="url(#grad-saddle-turn)" d="M 40,194
+           C 40,176.5 48.5,162.5 62,154.5
+           L 106,129
+           C 119.5,121.2 134.5,124.5 147.5,132
+           L 116,216.2
+           L 71.5,190.5
+           C 53.5,180 40,182 40,194
+           Z" />
+    </g>
+
+  </g>
+</svg>

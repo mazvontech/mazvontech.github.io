@@ -1,0 +1,291 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="8 25 1344 336" width="100%" height="100%" fill="none">
+  <title>Mazvon — Enterprise Business Operating System</title>
+  <desc>Master Corporate Horizontal Logo (mazvon_logo.svg) — Ratified Horizontal Ribbon Mark + Refined Medium/Semi-Bold Two-Story Geometric Wordmark (28px/24px Caliper, 76px Sovereign Isolation Buffer, Solid Obsidian Slate #212529)</desc>
+
+  <!-- ======================================================================= -->
+  <!-- VOLUMETRIC LIGHTING, HIGH-LUMINANCE CHROMATIC GRADIENTS & OCCLUSION     -->
+  <!-- (100% Locked & Immutable Ribbon Brand Mark Color Chemistry)             -->
+  <!-- ======================================================================= -->
+  <defs>
+    <!-- 1. Left Pillar Continuous 3D Cylindrical Gradient (High-Luminance Aqua -> Sovereign Teal -> Deep Cerulean) -->
+    <linearGradient id="grad-left-pillar" x1="40" y1="301" x2="146" y2="208" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#26E8CE" />
+      <stop offset="28%" stop-color="#19BEB8" />
+      <stop offset="58%" stop-color="#128EA8" />
+      <stop offset="84%" stop-color="#0D6490" />
+      <stop offset="100%" stop-color="#094474" />
+    </linearGradient>
+
+    <!-- 1B. Left Pillar Diffuse Ambient Occlusion Beneath Central Bridge Overhang (Calibrated Anti-Bruise Ramp) -->
+    <linearGradient id="grad-left-underbridge-shadow" x1="114" y1="197" x2="74" y2="255" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#073662" stop-opacity="0.36" />
+      <stop offset="45%" stop-color="#0A4E7C" stop-opacity="0.16" />
+      <stop offset="82%" stop-color="#0F7298" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#128EA8" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- 2. Right Pillar Base Gradient: Airy Sapphire Inner Wall -> Luminous Aqua Outer Wall -->
+    <linearGradient id="grad-right-pillar" x1="290" y1="190" x2="360" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#094074" />
+      <stop offset="25%" stop-color="#0D6292" />
+      <stop offset="55%" stop-color="#1392AC" />
+      <stop offset="82%" stop-color="#1AC8BC" />
+      <stop offset="100%" stop-color="#28F0CE" />
+    </linearGradient>
+
+    <!-- 2B. Right Pillar Soft Ambient Under-Blade Cast Shadow -->
+    <linearGradient id="grad-right-underblade-shadow" x1="312" y1="150" x2="340" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#062B56" stop-opacity="0.42" />
+      <stop offset="48%" stop-color="#094578" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#1392AC" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- 2C. Right Pillar Lower Fold Cup Shading (Harmonized with Luminous Azure Turn) -->
+    <linearGradient id="grad-right-fold-cup" x1="348" y1="198" x2="330" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#28F0CE" stop-opacity="0.0" />
+      <stop offset="52%" stop-color="#0E82C6" stop-opacity="0.20" />
+      <stop offset="100%" stop-color="#0A5CD2" stop-opacity="0.48" />
+    </linearGradient>
+
+    <!-- 3. Upper-Right Blade Gradient: Deep Cerulean Tuck -> Sovereign Teal Core -> Luminous Aqua-Mint Apex -->
+    <linearGradient id="grad-upper-blade" x1="196" y1="172" x2="350" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#094478" />
+      <stop offset="20%" stop-color="#0E6A94" />
+      <stop offset="45%" stop-color="#149EB0" />
+      <stop offset="72%" stop-color="#1ED2BE" />
+      <stop offset="100%" stop-color="#2CF2D2" />
+    </linearGradient>
+
+    <!-- 3B. Upper-Right Blade Ethereal Under-Bridge Contact Occlusion -->
+    <linearGradient id="grad-upper-blade-roll" x1="204" y1="178" x2="256" y2="146" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#062C5C" stop-opacity="0.44" />
+      <stop offset="46%" stop-color="#0A4C7E" stop-opacity="0.18" />
+      <stop offset="82%" stop-color="#0F7B9B" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#15B0B2" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- 4. Central Foreground Bridge Gradient: Luminous Aqua-Mint Crown -> Sovereign Cyan -> Electric Azure -->
+    <linearGradient id="grad-central-bridge" x1="48" y1="131" x2="346" y2="276" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#28F0CE" />
+      <stop offset="18%" stop-color="#1CD6CE" />
+      <stop offset="40%" stop-color="#10ACEE" />
+      <stop offset="64%" stop-color="#0A86F8" />
+      <stop offset="85%" stop-color="#0B70F0" />
+      <stop offset="100%" stop-color="#0C5CE8" />
+    </linearGradient>
+
+    <!-- 4B. Left Saddle Fold Silk Roll Transition (Zero Crease Banding) -->
+    <linearGradient id="grad-saddle-turn" x1="40" y1="186" x2="78" y2="152" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B7690" stop-opacity="0.22" />
+      <stop offset="50%" stop-color="#16B8B8" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#28F0CE" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+
+  <!-- ======================================================================= -->
+  <!-- 1. RATIFIED HORIZONTAL RIBBON BRAND MARK (X: 40..360 | Y: 63.2..322.2)  -->
+  <!-- ======================================================================= -->
+  <g id="mazvon-ribbon-mark">
+
+    <!-- LAYER 1: Back-Left Vertical Pillar (90° Perpendicular Lock) & Sweeping Isometric Base Return -->
+    <g id="layer-1-left-pillar">
+      <path id="ribbon-left-pillar" fill="url(#grad-left-pillar)" d="M 40,190
+            V 298
+            C 40,320.5 57,329 76,317.5
+            L 126.5,286.5
+            C 139,278.8 146,265.5 146,250.5
+            V 190
+            L 68,162
+            C 48,162 40,174 40,190
+            Z" />
+      <!-- Diffuse Ambient Occlusion Beneath Central Bridge Overhang -->
+      <path id="shadow-left-underbridge" fill="url(#grad-left-underbridge-shadow)" d="M 40,190
+            V 262
+            L 146,248
+            V 190
+            L 68,162
+            C 48,162 40,174 40,190
+            Z" />
+    </g>
+
+    <!-- LAYER 2: Back-Right Vertical Loop & Grounded Outer Right Wrap (13.55% Baseline Float) -->
+    <g id="layer-2-right-pillar">
+      <path id="ribbon-right-pillar" fill="url(#grad-right-pillar)" d="M 290,152
+            V 246.5
+            L 341,263
+            C 352.5,256 360,244 360,228
+            V 104
+            L 290,152
+            Z" />
+      <!-- Cylindrical Cup Shading Inside the Lower-Right Wrap Turn -->
+      <path id="shading-right-fold-cup" fill="url(#grad-right-fold-cup)" d="M 290,192
+            V 246.5
+            L 341,263
+            C 352.5,256 360,244 360,228
+            V 192
+            H 290
+            Z" />
+      <!-- Soft Cast Shadow Beneath Upper-Right Blade Overhang -->
+      <path id="shadow-right-underblade" fill="url(#grad-right-underblade-shadow)" d="M 290,152
+            V 208
+            L 360,138
+            V 104
+            L 290,152
+            Z" />
+    </g>
+
+    <!-- LAYER 3: Mid-Ground Ascending Right-Hand Blade (58.6px Caliper + -30.0° Tangential Glide) -->
+    <g id="layer-3-upper-right-blade">
+      <path id="ribbon-upper-right-blade" fill="url(#grad-upper-blade)" d="M 186,166
+            C 228,131 279,95.5 325.5,68
+            C 344.5,57 360,65.5 360,86.5
+            V 110
+            C 360,127 350.5,144 335,154
+            L 244,206.5
+            C 226,216.9 208,192 186,166
+            Z" />
+      <!-- Ethereal Under-Bridge Contact Occlusion -->
+      <path id="shading-upper-blade-roll" fill="url(#grad-upper-blade-roll)" d="M 186,166
+            C 228,131 279,95.5 325.5,68
+            C 344.5,57 360,65.5 360,86.5
+            V 110
+            C 360,127 350.5,144 335,154
+            L 244,206.5
+            C 226,216.9 208,192 186,166
+            Z" />
+    </g>
+
+    <!-- LAYER 4: Foreground Central Diagonal Traverse (Uniform 58.6px Caliper + Grounded Right Turn) -->
+    <g id="layer-4-central-bridge">
+      <path id="ribbon-central-bridge" fill="url(#grad-central-bridge)" d="M 40,190
+            C 40,172.5 48.5,158.5 62,150.5
+            L 106,125
+            C 119.5,117.2 134.5,121 147.5,129
+            L 326,243
+            C 344,253.4 360,243.5 360,228
+            C 360,244 352.5,256 341,263
+            L 280,294.5
+            C 264,303 247,299.8 231,290.5
+            C 178,259 124.5,223 71.5,187.5
+            C 53.5,176.5 40,178 40,190
+            Z" />
+      <!-- Silk Roll Shading Across Upper-Left Saddle Arch (Strictly Bounded to Bridge Contour) -->
+      <path id="shading-left-saddle" fill="url(#grad-saddle-turn)" d="M 40,190
+            C 40,172.5 48.5,158.5 62,150.5
+            L 106,125
+            C 119.5,117.2 134.5,121 147.5,129
+            L 116,215.2
+            L 71.5,187.5
+            C 53.5,176.5 40,178 40,190
+            Z" />
+    </g>
+
+  </g>
+
+  <!-- ======================================================================= -->
+  <!-- 2. REFINED MEDIUM/SEMI-BOLD ENTERPRISE WORDMARK: "Mazvon" (X: 436..1320) -->
+  <!-- ======================================================================= -->
+  <!-- Sovereign Isolation Buffer: 76.0px (X=360 to X=436 | 23.75% Mark Width) -->
+  <!-- Cap-Height: Y=102..284 (182.0px = 70.28% of Mark Height, Center Y=193)  -->
+  <!-- Lowercase x-Height: Y=146..284 (138.0px flat | 143.0px w/ overshoot)    -->
+  <!-- Caliper: 28.0px Vertical Stems (15.38% Cap) / 24.0px Horizontal (13.2%) -->
+  <!-- Color Canon: 100% Solid Maztech Obsidian Slate (#212529), Zero Gradient -->
+  <g id="mazvon-wordmark" fill="#212529">
+
+    <!-- Glyph 1: Architectural Capital "M" (X: 436..600 | Width: 164px) -->
+    <path id="glyph-M" d="M 436,102
+         H 468
+         L 518,205
+         L 568,102
+         H 600
+         V 284
+         H 572
+         V 154
+         L 529,244
+         H 507
+         L 464,154
+         V 284
+         H 436
+         Z" />
+
+    <!-- Glyph 2: Two-Story (Double-Decker) Geometric-Grotesque "a" (X: 624..746 | Width: 122px) -->
+    <path id="glyph-a" fill-rule="evenodd" d="M 630,175
+         C 635,153.5 655,143.5 685,143.5
+         C 721,143.5 746,160 746,193
+         V 284
+         H 719
+         V 266
+         C 708,279.5 691,286.5 670,286.5
+         C 642,286.5 624,270 624,244.5
+         C 624,217.5 644,202 682,202
+         H 718
+         V 192
+         C 718,175 706,166 684,166
+         C 666,166 655,172.5 651,182.5
+         L 630,175
+         Z
+         M 675,265.5
+         C 699,265.5 718,251.5 718,231
+         V 221
+         H 683
+         C 661,221 651,229.5 651,243.5
+         C 651,257 660,265.5 675,265.5
+         Z" />
+
+    <!-- Glyph 3: Precision Diagonal "z" (X: 770..878 | Width: 108px) -->
+    <path id="glyph-z" d="M 770,146
+         H 878
+         V 168
+         L 805,260
+         H 878
+         V 284
+         H 770
+         V 262
+         L 843,170
+         H 770
+         V 146
+         Z" />
+
+    <!-- Glyph 4: Symmetrical Vertex "v" (X: 890..1018 | Width: 128px) -->
+    <path id="glyph-v" d="M 890,146
+         H 919
+         L 954,248
+         L 989,146
+         H 1018
+         L 968,284
+         H 940
+         L 890,146
+         Z" />
+
+    <!-- Glyph 5: Balanced Geometric Circular "o" (X: 1028..1168 | Width: 140px) -->
+    <path id="glyph-o" fill-rule="evenodd" d="M 1098,143.5
+         C 1140,143.5 1168,173.5 1168,215
+         C 1168,256.5 1140,286.5 1098,286.5
+         C 1056,286.5 1028,256.5 1028,215
+         C 1028,173.5 1056,143.5 1098,143.5
+         Z
+         M 1098,167.5
+         C 1072,167.5 1056,187 1056,215
+         C 1056,243 1072,262.5 1098,262.5
+         C 1124,262.5 1140,243 1140,215
+         C 1140,187 1124,167.5 1098,167.5
+         Z" />
+
+    <!-- Glyph 6: Upright Parallel Arch "n" (X: 1192..1320 | Width: 128px) -->
+    <path id="glyph-n" d="M 1192,146
+         H 1219
+         V 165
+         C 1230,150 1247,143.5 1268,143.5
+         C 1300,143.5 1320,164 1320,200
+         V 284
+         H 1292
+         V 205
+         C 1292,181 1280,167.5 1259,167.5
+         C 1236,167.5 1220,183 1220,208
+         V 284
+         H 1192
+         V 146
+         Z" />
+
+  </g>
+</svg>
