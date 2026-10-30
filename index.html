@@ -4,181 +4,883 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mazvon OS — Next-Generation Business Operating System</title>
-    <meta name="description" content="Mazvon OS is an enterprise-grade Business Operating System powering global ERP, E-Commerce, and Point of Sale ecosystems. A Technology Venture of Mazasco Group.">
+    <meta name="description" content="Mazvon OS is a sovereign, all-in-one Business Operating System unifying Cloud ERP, Omni-Channel Commerce, Point of Sale, and Supply Chain Logistics into one autonomous engine. A Technology Venture of Mazasco Group.">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Mazvon OS — Next-Generation Business Operating System">
+    <meta property="og:description" content="Sovereign business operating platform unifying ERP, POS, E-Commerce, and Supply Chain logistics into a single autonomous engine.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mazvon.com">
+    <meta property="og:image" content="https://mazvon.com/mazvon_logo.svg">
+
+    <!-- Search Verification Tokens -->
     <meta name="msvalidate.01" content="0F29DB1B8573AD14DD627973BA13CF80" />
     <meta name="google-site-verification" content="UhB7a2kzmcKOTpxvs4KEtcx8tpAdJgZCaw6OzPzIlaM" />
-    
-    <!-- Schema.org Entity Metadata for Google & AI Knowledge Graph -->
+
+    <!-- Favicon Anchor -->
+    <link rel="icon" type="image/svg+xml" href="mazvon_icon.svg">
+
+    <!-- Schema.org Linked Data: Sitelinks Engine, SoftwareApplication & Parent Entity Linking -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Mazvon OS",
-      "operatingSystem": "Cloud / Web",
-      "applicationCategory": "BusinessApplication",
-      "creator": {
-        "@type": "Corporation",
-        "name": "Mazasco Group",
-        "url": "https://mazasco.com"
-      }
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://mazvon.com/#website",
+          "url": "https://mazvon.com",
+          "name": "Mazvon OS",
+          "description": "Sovereign Business Operating System",
+          "publisher": {
+            "@id": "https://mazasco.com/#corporation"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://mazvon.com/#software",
+          "name": "Mazvon OS",
+          "operatingSystem": "Cloud / Web / Linux Engine",
+          "applicationCategory": "BusinessApplication",
+          "description": "Enterprise-grade Business Operating System natively unifying Cloud ERP, Omni-Channel Commerce, Point of Sale, and Supply Chain Logistics.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/PreOrder"
+          },
+          "author": {
+            "@type": "Corporation",
+            "@id": "https://mazasco.com/#corporation",
+            "name": "Mazasco Group",
+            "url": "https://mazasco.com"
+          }
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Platform Architecture",
+          "url": "https://mazvon.com/#architecture"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Functional Suites",
+          "url": "https://mazvon.com/#suites"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Autonomous Infrastructure",
+          "url": "https://mazvon.com/#infrastructure"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Enterprise Access",
+          "url": "https://mazvon.com/#access"
+        }
+      ]
     }
     </script>
 
     <style>
         :root {
-            --mazvon-primary: #136F7B;
-            --mazvon-primary-shade: #0A424A;
-            --mazvon-cyan: #17A2B8;
-            --mazvon-dark: #212529;
-            --mazvon-surface: #F8F9FA;
-            --mazvon-border: #DEE2E6;
+            --maz-primary: #136F7B;
+            --maz-primary-shade: #0A424A;
+            --maz-cyan: #17A2B8;
+            --maz-cyan-light: #5BC0DE;
+            --maz-obsidian: #212529;
+            --maz-dark-card: #111A1D;
+            --maz-text-main: #212529;
+            --maz-text-muted: #495057;
+            --maz-surface: #FFFFFF;
+            --maz-canvas: #F8F9FA;
+            --maz-border: #E5E7EB;
+            --maz-gold: #B89344;
+            --maz-container: 1140px;
         }
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--mazvon-surface);
-            color: var(--mazvon-dark);
-            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--maz-canvas);
+            color: var(--maz-text-main);
+            line-height: 1.55;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Top Navigation Bar */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--maz-border);
+        }
+
+        .header-inner {
+            max-width: var(--maz-container);
+            margin: 0 auto;
+            padding: 12px 20px;
             display: flex;
-            flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            text-align: center;
-            padding: 40px 24px;
         }
-        .header {
-            width: 100%;
-            max-width: 1100px;
+
+        .brand-logo {
             display: flex;
-            justify-content: center;
             align-items: center;
-            gap: 12px;
-            padding: 20px 0;
+            text-decoration: none;
         }
-        .brand-title {
-            font-size: 28px;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            color: var(--mazvon-dark);
+
+        .brand-logo img {
+            height: 38px;
+            width: auto;
+            object-fit: contain;
         }
-        .brand-title span {
-            color: var(--mazvon-primary);
+
+        .desktop-nav {
+            display: flex;
+            gap: 24px;
+            align-items: center;
         }
-        .main {
-            max-width: 780px;
-            margin: auto;
-            padding: 40px 0;
+
+        .desktop-nav a {
+            text-decoration: none;
+            color: var(--maz-text-main);
+            font-size: 14px;
+            font-weight: 600;
+            transition: color 0.2s ease;
         }
-        .badge {
+
+        .desktop-nav a:hover {
+            color: var(--maz-primary);
+        }
+
+        .nav-btn {
+            background-color: var(--maz-primary);
+            color: #FFFFFF !important;
+            padding: 8px 18px;
+            border-radius: 4px;
+            transition: background-color 0.2s ease !important;
+        }
+
+        .nav-btn:hover {
+            background-color: var(--maz-primary-shade) !important;
+        }
+
+        /* Mobile Header Controls */
+        .mobile-actions {
+            display: none;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .mobile-contact-pill {
+            background-color: rgba(19, 111, 123, 0.08);
+            color: var(--maz-primary);
+            border: 1px solid rgba(19, 111, 123, 0.25);
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 50px;
+            text-transform: uppercase;
+        }
+
+        .menu-toggle {
+            background: none;
+            border: 1px solid var(--maz-border);
+            border-radius: 6px;
+            padding: 6px 10px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .menu-toggle span {
+            width: 20px;
+            height: 2px;
+            background-color: var(--maz-obsidian);
+            border-radius: 2px;
+        }
+
+        .mobile-menu-drawer {
+            display: none;
+            background: #FFFFFF;
+            border-bottom: 1px solid var(--maz-border);
+            padding: 16px 20px;
+        }
+
+        .mobile-menu-drawer.open {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .mobile-menu-drawer a {
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--maz-text-main);
+            padding: 6px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(180deg, #FFFFFF 0%, var(--maz-canvas) 100%);
+            border-bottom: 1px solid var(--maz-border);
+            padding: 60px 20px 52px;
+            text-align: center;
+        }
+
+        .hero-inner {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
             display: inline-flex;
             align-items: center;
             gap: 8px;
             background: rgba(19, 111, 123, 0.08);
-            color: var(--mazvon-primary);
-            font-size: 12px;
+            color: var(--maz-primary);
+            border: 1px solid rgba(19, 111, 123, 0.25);
+            font-size: 11px;
             font-weight: 700;
             letter-spacing: 1.5px;
             text-transform: uppercase;
-            padding: 8px 18px;
+            padding: 6px 16px;
             border-radius: 50px;
-            margin-bottom: 24px;
-            border: 1px solid rgba(19, 111, 123, 0.2);
+            margin-bottom: 20px;
         }
+
         .badge-dot {
             width: 8px;
             height: 8px;
-            background-color: var(--mazvon-primary);
+            background-color: var(--maz-primary);
             border-radius: 50%;
-            display: inline-block;
         }
-        h1 {
-            font-size: 52px;
+
+        .hero h1 {
+            font-size: 48px;
             font-weight: 850;
             line-height: 1.15;
-            letter-spacing: -1.5px;
-            margin-bottom: 24px;
-            color: var(--mazvon-dark);
+            letter-spacing: -1.2px;
+            color: var(--maz-obsidian);
+            margin-bottom: 20px;
         }
-        h1 span {
-            color: var(--mazvon-primary);
+
+        .hero h1 span {
+            color: var(--maz-primary);
         }
-        p {
-            font-size: 20px;
+
+        .hero p {
+            font-size: 19px;
             line-height: 1.6;
-            color: #495057;
-            margin-bottom: 40px;
+            color: var(--maz-text-muted);
+            margin-bottom: 32px;
+            max-width: 760px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        .cta-container {
+
+        .hero-cta-group {
             display: flex;
             justify-content: center;
-            gap: 16px;
+            gap: 14px;
             flex-wrap: wrap;
         }
+
         .btn-primary {
-            background-color: var(--mazvon-primary);
+            background-color: var(--maz-primary);
             color: #FFFFFF;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 600;
-            padding: 14px 32px;
-            border-radius: 6px;
-            transition: background-color 0.2s ease;
+            padding: 12px 28px;
+            border-radius: 4px;
+            transition: background 0.2s ease;
         }
+
         .btn-primary:hover {
-            background-color: var(--mazvon-primary-shade);
+            background-color: var(--maz-primary-shade);
         }
-        .footer {
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--maz-obsidian);
+            border: 1px solid var(--maz-border);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 12px 28px;
+            border-radius: 4px;
+            background: #FFFFFF;
+            transition: all 0.2s ease;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--maz-primary);
+            color: var(--maz-primary);
+        }
+
+        /* Section Global */
+        .section {
+            padding: 64px 20px;
+            max-width: var(--maz-container);
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 44px;
+        }
+
+        .section-tag {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--maz-primary);
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .section-header h2 {
+            font-size: 34px;
+            font-weight: 800;
+            letter-spacing: -0.6px;
+            color: var(--maz-obsidian);
+            margin-bottom: 12px;
+        }
+
+        .section-header p {
+            font-size: 16px;
+            color: var(--maz-text-muted);
+        }
+
+        /* Functional Suites Grid */
+        .suites-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .suite-card {
+            background: var(--maz-surface);
+            border: 1px solid var(--maz-border);
+            border-radius: 8px;
+            padding: 30px 24px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .suite-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--maz-primary);
+        }
+
+        .suite-tag {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.2px;
+            color: var(--maz-cyan);
+            margin-bottom: 12px;
+        }
+
+        .suite-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--maz-obsidian);
+            margin-bottom: 10px;
+        }
+
+        .suite-card p {
             font-size: 14px;
-            color: #6C757D;
-            padding: 24px 0;
-            border-top: 1px solid var(--mazvon-border);
-            width: 100%;
-            max-width: 1100px;
+            color: var(--maz-text-muted);
+            margin-bottom: 20px;
+            line-height: 1.55;
         }
-        .footer a {
-            color: var(--mazvon-primary);
+
+        .suite-modules {
+            list-style: none;
+            border-top: 1px solid rgba(0,0,0,0.05);
+            padding-top: 14px;
+        }
+
+        .suite-modules li {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--maz-text-main);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .suite-modules li::before {
+            content: "•";
+            color: var(--maz-primary);
+            font-size: 16px;
+        }
+
+        /* Architecture Spotlight Banner */
+        .architecture-banner {
+            background: linear-gradient(135deg, #111A1D 0%, #1A2B32 100%);
+            border-radius: 10px;
+            padding: 48px 36px;
+            color: #FFFFFF;
+            margin: 20px auto;
+            border: 1px solid rgba(23, 162, 184, 0.25);
+        }
+
+        .architecture-banner-inner {
+            max-width: 820px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .banner-tag {
+            display: inline-block;
+            background: rgba(23, 162, 184, 0.2);
+            color: #26E8CE;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 5px 14px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+        }
+
+        .architecture-banner h3 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 14px;
+            letter-spacing: -0.5px;
+        }
+
+        .architecture-banner p {
+            font-size: 16px;
+            line-height: 1.65;
+            color: #B4C2C6;
+            margin-bottom: 28px;
+        }
+
+        .metrics-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 28px;
+            text-align: center;
+        }
+
+        .metric-item h4 {
+            font-size: 28px;
+            font-weight: 850;
+            color: #26E8CE;
+            margin-bottom: 4px;
+        }
+
+        .metric-item p {
+            font-size: 13px;
+            color: #8C999E;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Access & Staging Notice Card */
+        .access-card {
+            background: var(--maz-surface);
+            border: 1px solid var(--maz-border);
+            border-radius: 8px;
+            padding: 40px 32px;
+            max-width: 820px;
+            margin: 0 auto;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+        }
+
+        .access-card h3 {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--maz-obsidian);
+            margin-bottom: 12px;
+        }
+
+        .access-card p {
+            font-size: 15px;
+            color: var(--maz-text-muted);
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .status-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #FEF3C7;
+            color: #92400E;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 6px 16px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+            border: 1px solid #FDE68A;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: #111A1D;
+            color: #8C999E;
+            padding: 50px 20px 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .footer-inner {
+            max-width: var(--maz-container);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 36px;
+        }
+
+        .footer-brand h4 {
+            font-size: 18px;
+            font-weight: 800;
+            color: #FFFFFF;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .footer-brand p {
+            font-size: 13px;
+            line-height: 1.6;
+            max-width: 340px;
+        }
+
+        .footer-col h5 {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 14px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col a {
+            color: #8C999E;
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-col a:hover {
+            color: #26E8CE;
+        }
+
+        .footer-bottom {
+            max-width: var(--maz-container);
+            margin: 0 auto;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+        }
+
+        .footer-bottom a {
+            color: var(--maz-cyan);
             text-decoration: none;
             font-weight: 600;
+        }
+
+        @media (max-width: 860px) {
+            .desktop-nav { display: none; }
+            .mobile-actions { display: flex; }
+            .hero { padding: 44px 16px 36px; }
+            .hero h1 { font-size: 34px; letter-spacing: -0.8px; }
+            .hero p { font-size: 16px; margin-bottom: 24px; }
+            .section { padding: 44px 16px; }
+            .section-header h2 { font-size: 26px; }
+            .suites-grid { grid-template-columns: 1fr; gap: 16px; }
+            .architecture-banner { padding: 32px 20px; }
+            .architecture-banner h3 { font-size: 24px; }
+            .metrics-row { grid-template-columns: 1fr; gap: 16px; }
+            .access-card { padding: 28px 18px; }
+            .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+            .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
         }
     </style>
 </head>
 <body>
 
-    <header class="header">
-        <!-- SVG Vector Emblem -->
-        <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 34L20 6L34 34H26L20 20L14 34H6Z" fill="#136F7B"/>
-            <path d="M14 34L20 20L26 34H14Z" fill="#17A2B8"/>
-        </svg>
-        <div class="brand-title">MAZ<span>VON</span></div>
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="https://mazvon.com" class="brand-logo">
+                <img src="mazvon_logo.svg" alt="Mazvon OS Wordmark">
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="desktop-nav">
+                <a href="#overview">Overview</a>
+                <a href="#suites">Capabilities</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#access" class="nav-btn">Enterprise Access</a>
+            </nav>
+
+            <!-- Mobile Header Controls -->
+            <div class="mobile-actions">
+                <a href="#access" class="mobile-contact-pill">Inquire</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div class="mobile-menu-drawer" id="mobileDrawer">
+            <a href="#overview" onclick="closeMobileMenu()">Platform Overview</a>
+            <a href="#suites" onclick="closeMobileMenu()">Functional Suites</a>
+            <a href="#architecture" onclick="closeMobileMenu()">System Architecture</a>
+            <a href="#access" onclick="closeMobileMenu()">Enterprise Deployment</a>
+        </div>
     </header>
 
-    <main class="main">
-        <div class="badge">
-            <span class="badge-dot"></span>
-            Enterprise Operating System
+    <!-- Hero Showcase -->
+    <section class="hero" id="overview">
+        <div class="hero-inner">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                The Autonomous Business Operating System
+            </div>
+            <h1>The Unified Operating System for <span>Modern Enterprise</span>.</h1>
+            <p>
+                Mazvon OS natively unifies Cloud ERP, Multi-Channel E-Commerce, Point of Sale, and Supply Chain Logistics into a single autonomous database core. Built for organizations that demand complete operational sovereignty.
+            </p>
+            <div class="hero-cta-group">
+                <a href="#access" class="btn-primary">Request Enterprise Briefing</a>
+                <a href="#suites" class="btn-secondary">Explore Capabilities</a>
+            </div>
         </div>
-        <h1>The Sovereign Business <span>Operating System</span>.</h1>
-        <p>
-            Mazvon OS natively unifies Cloud ERP, Multi-Channel E-Commerce, 
-            Point of Sale, and CRM into one high-performance architecture. 
-            Built for modern enterprises that demand complete operational autonomy.
-        </p>
-        <div class="cta-container">
-            <a href="mailto:sagir@mazvon.com" class="btn-primary">
-                Contact Enterprise Architecture
+    </section>
+
+    <!-- Functional Suites Grid -->
+    <section class="section" id="suites">
+        <div class="section-header">
+            <span class="section-tag">System Capabilities</span>
+            <h2>Integrated Functional Architecture</h2>
+            <p>
+                Rather than stitching together fragmented software vendors, Mazvon OS delivers complete operational harmony across every commercial department.
+            </p>
+        </div>
+
+        <div class="suites-grid">
+            <!-- Suite 1 -->
+            <div class="suite-card">
+                <div>
+                    <div class="suite-tag">CORE // 01</div>
+                    <h3>Financial &amp; General Ledger</h3>
+                    <p>Double-entry accounting engine with automated bank synchronization, multi-currency valuation, and regulatory compliance.</p>
+                </div>
+                <ul class="suite-modules">
+                    <li>Dynamic Financial Reporting</li>
+                    <li>Automated Reconciliation</li>
+                    <li>Accounts Payable &amp; Receivable</li>
+                </ul>
+            </div>
+
+            <!-- Suite 2 -->
+            <div class="suite-card">
+                <div>
+                    <div class="suite-tag">CORE // 02</div>
+                    <h3>Omni-Channel Commerce &amp; POS</h3>
+                    <p>Real-time retail Point of Sale integrated with multi-store inventory, barcoding hardware, and digital storefronts.</p>
+                </div>
+                <ul class="suite-modules">
+                    <li>Offline-First POS Terminals</li>
+                    <li>Global E-Commerce Engine</li>
+                    <li>Unified Customer Ledger</li>
+                </ul>
+            </div>
+
+            <!-- Suite 3 -->
+            <div class="suite-card">
+                <div>
+                    <div class="suite-tag">CORE // 03</div>
+                    <h3>Supply Chain &amp; Logistics</h3>
+                    <p>Multi-warehouse inventory routing, automated replenishment rules, serial tracking, and landed-cost calculations.</p>
+                </div>
+                <ul class="suite-modules">
+                    <li>Automated Reordering Triggers</li>
+                    <li>Direct Drop-Shipping &amp; Cross-Dock</li>
+                    <li>Real-Time Valuation Audit</li>
+                </ul>
+            </div>
+
+            <!-- Suite 4 -->
+            <div class="suite-card">
+                <div>
+                    <div class="suite-tag">CORE // 04</div>
+                    <h3>CRM &amp; Sales Pipeline</h3>
+                    <p>Predictive lead routing, automated quotations, e-signatures, and multi-channel customer communication history.</p>
+                </div>
+                <ul class="suite-modules">
+                    <li>Instant Quotation-to-Invoice</li>
+                    <li>Pipeline Telemetry &amp; Forecasting</li>
+                    <li>Omnichannel Inbound Tracking</li>
+                </ul>
+            </div>
+
+            <!-- Suite 5 -->
+            <div class="suite-card">
+                <div>
+                    <div class="suite-tag">CORE // 05</div>
+                    <h3>Human Capital &amp; Operations</h3>
+                    <p>Comprehensive workforce administration, centralized employee contracts, time tracking, and department access control.</p>
+                </div>
+                <ul class="suite-modules">
+                    <li>Role-Based Security Matrix</li>
+                    <li>Operational Time Allocation</li>
+                    <li>Recruitment Pipeline Tracking</li>
+                </ul>
+            </div>
+
+            <!-- Suite 6 -->
+            <div class="suite-card">
+                <div>
+                    <div class="suite-tag">CORE // 06</div>
+                    <h3>Manufacturing &amp; Engineering</h3>
+                    <p>Multi-level Bills of Materials, work order scheduling, real-time machine capacity planning, and quality control checks.</p>
+                </div>
+                <ul class="suite-modules">
+                    <li>Dynamic Work Order Routing</li>
+                    <li>Scrap &amp; Variance Analysis</li>
+                    <li>Traceable Maintenance Schedules</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Spotlight Banner -->
+    <section class="section" id="architecture">
+        <div class="architecture-banner">
+            <div class="architecture-banner-inner">
+                <span class="banner-tag">Engine Philosophy</span>
+                <h3>Engineered for Total Data Sovereignty</h3>
+                <p>
+                    Mazvon OS is built on a containerized, edge-deployable architecture. Your business data remains completely within your control, protected by dedicated enterprise databases with zero vendor lock-in.
+                </p>
+                <div class="metrics-row">
+                    <div class="metric-item">
+                        <h4>100%</h4>
+                        <p>Unified Database Core</p>
+                    </div>
+                    <div class="metric-item">
+                        <h4>0</h4>
+                        <p>Fragmented Plugins</p>
+                    </div>
+                    <div class="metric-item">
+                        <h4>Enterprise</h4>
+                        <p>Sovereign Cloud Isolation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Deployment / Controlled Access -->
+    <section class="section" id="access">
+        <div class="access-card">
+            <div class="status-pill">
+                <span>●</span> Private Enterprise Staging Active
+            </div>
+            <h3>Controlled Enterprise Deployment</h3>
+            <p>
+                Mazvon OS is currently being staged for private enterprise clients and selected industrial partners. If your organization requires an autonomous business operating system, contact our executive technical team directly to request a private architecture briefing.
+            </p>
+            <a href="mailto:sagir@mazvon.com?subject=Mazvon%20OS%20Enterprise%20Deployment%20Inquiry" class="btn-primary">
+                Inquire for Enterprise Deployment
             </a>
         </div>
-    </main>
+    </section>
 
-    <footer class="footer">
-        &copy; 2026 Mazvon. All Rights Reserved. A Sovereign Technology Venture of 
-        <a href="https://mazasco.com">Mazasco Group</a>.
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <h4>MAZVON OS</h4>
+                <p>
+                    The autonomous Business Operating System. Sovereign ERP, Omni-Channel Commerce, Point of Sale, and Logistics unified into one engine.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h5>Platform</h5>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#suites">Capabilities</a></li>
+                    <li><a href="#architecture">Architecture</a></li>
+                    <li><a href="#access">Deployment Access</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Corporate Governance</h5>
+                <ul>
+                    <li><a href="https://mazasco.com" target="_blank">Mazasco Group (Holding)</a></li>
+                    <li><a href="https://www.linkedin.com/company/mazascogroup" target="_blank">LinkedIn Corporate</a></li>
+                    <li><a href="https://github.com/mazvontech" target="_blank">GitHub Engineering</a></li>
+                    <li><a href="https://x.com/MazvonTech" target="_blank">X (Twitter)</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div>&copy; 2026 Mazvon. All Rights Reserved.</div>
+            <div>A Sovereign Technology Venture of <a href="https://mazasco.com" target="_blank">Mazasco Group</a>.</div>
+        </div>
     </footer>
+
+    <!-- Zero-Dependency Mobile Menu Controller -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+
+        menuToggle.addEventListener('click', () => {
+            mobileDrawer.classList.toggle('open');
+        });
+
+        function closeMobileMenu() {
+            mobileDrawer.classList.remove('open');
+        }
+    </script>
 
 </body>
 </html>
